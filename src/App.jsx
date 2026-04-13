@@ -34,6 +34,7 @@ import Settings from "./pages/settings/Settings";
 // Errors
 import NotFound from "./pages/errors/NotFound";
 import Unauthorized from "./pages/errors/Unauthorized";
+import AuthSuccess from "./pages/AuthSuccess";
 
 export default function App() {
   return (
@@ -72,6 +73,7 @@ export default function App() {
 
               {/* Settings */}
               <Route path="/settings" element={<Settings />} />
+              <Route path="/auth-success" element={<AuthSuccess />} />
             </Route>
 
             {/* Fallback */}
